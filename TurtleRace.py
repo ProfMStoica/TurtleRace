@@ -3,6 +3,7 @@ Version 1
 In this version the turtle race has a flat single-file structure
 """
 import turtle
+import random
 
 #Create the race track window and configure it.
 raceTrack = turtle.Screen()
@@ -41,6 +42,14 @@ curly.pendown()
 moe.pendown()
 
 #Run the race
+dist = random.randint(10, 100)
+larry.forward(dist)
+
+dist = random.randint(10, 100)
+curly.forward((dist))
+
+dist = random.randint(10, 100)
+moe.forward(dist)
 
 #Determine the winner
 
