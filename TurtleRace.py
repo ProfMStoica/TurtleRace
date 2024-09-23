@@ -9,8 +9,36 @@ raceTrack = turtle.Screen()
 raceTrack.bgcolor('lightgreen')
 
 #Create the racers
+larry = turtle.Turtle()
+larry.shape("turtle")
+larry.color("darkgreen")
+larry.turtlesize(3, 3, 1)
+larry.penup()
+
+curly = turtle.Turtle()
+curly.shape("turtle")
+curly.color("darkred")
+curly.turtlesize(3, 3, 1)
+curly.penup()
+
+moe = turtle.Turtle()
+moe.shape("turtle")
+moe.color("blue")
+moe.turtlesize(3, 3, 1)
+moe.penup()
 
 #Position the racers on the starting line
+larry.left(180)
+larry.forward(200)
+larry.right(90)
+curly.left(90)
+moe.forward(200)
+moe.left(90)
+
+#get them ready to race
+larry.pendown()
+curly.pendown()
+moe.pendown()
 
 #Run the race
 
