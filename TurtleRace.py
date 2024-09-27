@@ -1,6 +1,6 @@
 """
-Version 1
-In this version the turtle race has a flat single-file structure
+Version 2
+In this version the turtle race program is organized using multiple functions
 """
 import turtle
 import random
