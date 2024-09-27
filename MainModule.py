@@ -1,6 +1,7 @@
 """
-Version 2
-In this version the turtle race program is organized using multiple functions
+Version 3
+In this version the turtle race program is organized using multiple modules
+Main module coordinates the entire program and interacts with the user
 """
 import turtle
 import random

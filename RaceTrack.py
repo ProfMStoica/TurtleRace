@@ -1,0 +1,1 @@
+"""Creates the race track and the racers, configures them and prepares them for the race"""
