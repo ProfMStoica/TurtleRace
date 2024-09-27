@@ -4,6 +4,7 @@ In this version the turtle race has a flat single-file structure
 """
 import turtle
 import random
+from tkinter import messagebox
 
 #Create the race track window and configure it.
 raceTrack = turtle.Screen()
@@ -52,8 +53,11 @@ dist = random.randint(10, 100)
 moe.forward(dist)
 
 #Determine the winner
+#TODO: use branching to determine which turtle advanced the most
+winner = moe
 
 #Let the user know who the winner is
+messagebox.showinfo("Turtle Race", "Moe")
 
 #Wait for user confirmation to close the program
 raceTrack.exitonclick()
