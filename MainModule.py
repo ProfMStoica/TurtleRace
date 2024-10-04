@@ -10,7 +10,7 @@ import Race
 #run the main program using the functions we have defined
 RaceTrack.createRaceTrack()
 
-RaceTrack.registerRacers()
+Race.registerRacers()
 
 Race.positionRacers()
 
