@@ -16,10 +16,10 @@ Race.positionRacers()
 
 Race.runRace()
 
-Race.determineWinner()
+winner, raceResult = Race.determineWinner()
 
 #Let the user know who the winner is
-messagebox.showinfo("Turtle Race", "Mikey")
+messagebox.showinfo("Turtle Race", raceResult)
 
 #wait for the user to confirm closing the race track
 RaceTrack.closeRaceTrack()

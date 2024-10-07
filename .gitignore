@@ -1,3 +1,5 @@
 __pycache__/*.pyc
 __pycache__/*.*
 __pycache__/Race.cpython-312.pyc
+__pycache__/Race.cpython-312.pyc
+__pycache__/**
