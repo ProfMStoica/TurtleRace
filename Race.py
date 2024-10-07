@@ -47,9 +47,6 @@ def positionRacers():
 
 #Run the race
 def runRace():
-    #calculate the coordinate of the finish line
-    finishLineCoordinate = RaceTrack.raceTrack.window_height()/2
-
     #repeat advancing turtles until they reach the finish line (DO NOT use "until")
     #repeat advancing turtles for as long as (while) they did NOT reach the finish line
     finishLineReached = False
@@ -64,11 +61,24 @@ def runRace():
         dist = random.randint(10, 100)
         don.forward(dist)
 
+        #TODO: adjust the turtle position so they don't go passed the finished line
+
         #determine if any of the turtles have crossed the finish line
-        if leo.ycor() >= finishLineCoordinate or mikey.ycor() >= finishLineCoordinate or \
-            don.ycor() >= finishLineCoordinate:
+        if checkFinishedLineCrossed():
             #one or more turtles have crossed the finish line
             finishLineReached = True
+
+        
+
+#Checks if any of the turtles have crossed the finish line
+def checkFinishedLineCrossed():
+    #calculate the coordinate of the finish line
+    finishLineCoordinate = RaceTrack.raceTrack.window_height()/2
+    
+    TURTLE_HEIGHT_ADJUSTMENT = 17
+    return leo.ycor() + TURTLE_HEIGHT_ADJUSTMENT >= finishLineCoordinate or \
+            mikey.ycor() + TURTLE_HEIGHT_ADJUSTMENT >= finishLineCoordinate or \
+            don.ycor() + TURTLE_HEIGHT_ADJUSTMENT >= finishLineCoordinate
 
         
 
